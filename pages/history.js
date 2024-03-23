@@ -3,7 +3,8 @@ import { useAtom } from 'jotai';
 import { useRouter } from 'next/router';
 import { Button, Card, ListGroup } from 'react-bootstrap';
 import { searchHistoryAtom } from '../store'; // Adjust the path to your store.js file accordingly
-import styles from '@/styles/History.module.css';
+import styles from '../styles/history.module.css'
+//import styles from '@/styles/History.module.css';
 
 export default function History() {
   const [searchHistory, setSearchHistory] = useAtom(searchHistoryAtom);
